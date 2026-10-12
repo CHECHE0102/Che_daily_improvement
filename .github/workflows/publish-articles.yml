@@ -24,7 +24,7 @@ jobs:
           # only article files may come in this way
           CHANGED=$(git diff --name-only origin/main "origin/$BR")
           echo "$CHANGED"
-          if echo "$CHANGED" | grep -qv '^articles/'; then echo "Branch changes files outside articles/ — refusing"; exit 1; fi
+          if [ -n "$CHANGED" ] && echo "$CHANGED" | grep -qv '^articles/'; then echo "Branch changes files outside articles/ — refusing"; exit 1; fi
           git merge --no-edit "origin/$BR"
           git push origin main
           git push origin --delete "$BR"
