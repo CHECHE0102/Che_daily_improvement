@@ -1,13 +1,3 @@
-# Che Daily Improvement
+# Che Daily Improvement (retired)
 
-每天一篇愛爾蘭新聞學英文的網頁 App。
-
-- 點任何單字立即顯示中文翻譯，查過的字自動存進字典
-- 讀前複習測驗：依答對率與多久沒複習加權抽題
-- 讀後測驗：每題附講解，答錯會說明差別
-- 每天 4 篇文章（1 篇頭條 + 3 篇其他主題），自動更新
-
-學習紀錄存在每個人自己的瀏覽器（localStorage），可在「字典」頁匯出／匯入備份。
-
-## 文章格式
-`articles/index.json` 列出所有文章；每篇文章是 `articles/<id>.json`，含段落與每個字的語境翻譯（`gloss`），部分單字附詳細講解（`gloss[word].note`）。
+This app is no longer updated. It has moved to [BinBin daily](https://cheche0102.github.io/Che_daily_improvement_pro/) (repo: CHECHE0102/Che_daily_improvement_pro).
